@@ -1,4 +1,8 @@
 body {
+	background: url('cloud.jpg');
+	background-size: 100%;
+	font-family: Helvetica;
+	color: salmon;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -7,7 +11,7 @@ body {
 }
 
 h1 {
-	font-weight: lighter;
+	font-weight: bold;
 	font-size: 40px;
 	letter-spacing: 2px;
 	margin-bottom: 0px;
@@ -28,10 +32,24 @@ input {
 	margin-top: 10px;
 }
 
-.addoption {
-	margin-top: 10px;
-}
 
 button {
-	background-color: yellow;
+	border-radius: 25px;
+}
+
+.addoption {
+	background-color: white;
+	font-size: 25px;
+	margin-top: 10px;
+	border-radius: 12px;
+	border: none;
+}
+
+.button {
+	background-color: white; /* Green */
+	border: 1px;
+	font-size: 25px;
+	color: gray;
+	border: none;
+	border-radius: 12px%;
 }
