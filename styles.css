@@ -1,6 +1,6 @@
 body {
 	background: url('pasta.gif');
-	background-size: 100%;
+	background-size: cover;
 	font-family: Helvetica;
 	color: #ff33cc;
 	display: flex;
