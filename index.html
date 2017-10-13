@@ -6,15 +6,15 @@
 		<link href="./styles.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1>HJÄLP MIG VÄLJA MELLAN.....</h1>
+		<h1>VAD SKA JAG ÄTA TILL MIDDAG.....</h1>
 		<div class="inputsection">
 			<div class="inputs">
-				<input placeholder="Something"></input>
+				<input placeholder="FYLL I"></input>
 			</div>
-		<button class="addoption">ADD</button>
+		<button class="addoption">LÄGG TILL</button>
 		</div>
 		<div class="resultsection"></div>
-		<button class="submit">Go!</button>
+		<button class="submit">KÖR!</button>
 		<br>
 		<h2>WOWOWOWOWOWWWW</h2>
 
@@ -37,7 +37,7 @@
 					$('input').each(function() {
 						options.push($(this).val())
 					})
-					var winner = options[math.floor(math.random() * options.length)]
+					var winner = options[Math.floor(Math.random() * options.length)]
 					console.log(winner)
 					$('.resultsection').text(winner)
 				}
