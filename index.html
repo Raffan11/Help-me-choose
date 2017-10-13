@@ -1,21 +1,48 @@
 <!doctype html>
 <html lang=en>
 	<head>
-		<meta charset="utf-8">
-		<title>DESTINATION.COM</title>
+		<meta charset=utf-8>
+		<title>DINNER TIME</title>
 		<link href="./styles.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1>YOUR NEXT DESTINATION WILL BE..</h1>
+		<h1>HJÄLP MIG VÄLJA MELLAN.....</h1>
 		<div class="inputsection">
 			<div class="inputs">
 				<input placeholder="Something"></input>
 			</div>
 		<button class="addoption">ADD</button>
 		</div>
-		<button class="button">NEXT</button>
+		<div class="resultsection"></div>
+		<button class="submit">Go!</button>
 		<br>
-		<h2>MUMS</h2>
-	<img src="departure.jpg">
+		<h2>WOWOWOWOWOWWWW</h2>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script>
+			$(function() {
+				$('.resultsection').hide()
+
+				var add_option = function() {
+					$('.inputs').append('<input></input>')
+				}
+
+				$('.addoption').click(add_option)
+
+
+				var options = []
+				var submit = function() {
+					$('.inputsection').hide()
+					$('.resultsection').css('display','flex')
+					$('input').each(function() {
+						options.push($(this).val())
+					})
+					var winner = options[math.floor(math.random() * options.length)]
+					console.log(winner)
+					$('.resultsection').text(winner)
+				}
+					$('.submit').click(submit)
+			})
+		</script>
 	</body>
 </html>

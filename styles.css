@@ -1,13 +1,13 @@
 body {
-	background: url('cloud.jpg');
-	background-size: 100%;
+	background: url('clouds.gif');
+	background-size: cover;
 	font-family: Helvetica;
-	color: salmon;
+	color: #ff33cc;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 150px;
+	margin-top: 130px;
 }
 
 h1 {
@@ -16,6 +16,13 @@ h1 {
 	letter-spacing: 2px;
 	margin-bottom: 0px;
 }
+
+h2 {
+	font-weight: bold;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
 
 .inputsection {
 	margin:50px, 0px, 80px, 0px;
@@ -32,24 +39,16 @@ input {
 	margin-top: 10px;
 }
 
-
-button {
-	border-radius: 25px;
-}
-
 .addoption {
-	background-color: white;
-	font-size: 25px;
 	margin-top: 10px;
-	border-radius: 12px;
-	border: none;
 }
 
-.button {
-	background-color: white; /* Green */
-	border: 1px;
-	font-size: 25px;
-	color: gray;
-	border: none;
-	border-radius: 12px%;
+.resultsection {
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+
 }
+
